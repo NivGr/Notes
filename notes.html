@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style/notes.css">
+    <meta name="viewport" wrapper="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <p class="col-sm-12">My Task Board</p>
+          <div id="myNote" class = "col-sm-12">
+            <input type="text" class="col-sm-12" id="myText"/>
+            <input type="text" class="col-sm-3" id="myName" placeholder="Enter your name"/>
+            <input type="date" class="col-sm-3" id="myDeadline" placeholder="Enter Deadline"/>
+            <button type="submit" class="col-sm-4 btn btn-success" id="submit">Add Note</button>
+            <button type="reset" class="col-sm-4 btn btn-secondary" id="reset">RESET TEXT</button>
+          </div>
+        <ul id='myNotes'>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="notes_ul.js"></script>
+</html>

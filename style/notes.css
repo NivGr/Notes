@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+}
+
+p {
+  font-size: 65px;
+  color:black;
+  font-family: 'Great Vibes', cursive;
+}
+
+.container-fluid {
+  font-size: 50px;
+  text-align: center;
+}
+
+.row {
+  background-image: url("../Photos/new/tile.jpg");
+  background-color: lightgray;
+  height: 930px;
+  align: center;
+  overflow:scroll;
+}
+
+#myNote {
+  position: relative;
+  /* background-image: url("../Photos/new/formbg.jpg"); */
+  background-size:auto 100%;
+  height: 400px;
+  width: 70%;
+  margin-left: 200px;
+  background-image: url("../Photos/new/formbg.jpg");
+  background-repeat:repeat-y;
+  background-size:auto 100%;
+  background-color: #cccccc;
+  height: 300px;
+  background-size:contain;
+}
+
+#myText {
+  font-size: 20px;
+  border: 0 none;
+  color: black;
+  outline: none;
+  margin-left:150px;
+  box-sizing:border-box;
+  background: transparent;
+}
+
+#myName {
+  float:left;
+  font-size: 15px;
+  position:relative;
+  bottom: -240px;
+}
+
+#myDeadline {
+  float:right;
+  font-size: 15px;
+  position:relative;
+  bottom: -240px;
+}
+
+#submit{
+  float:left;
+  margin-right: 250px;
+  position:relative;
+  bottom: -245px;
+  right: 15px;
+}
+
+#reset {
+  float:right;
+  position:relative;
+  bottom: -243px;
+  left: 15px;
+}
+
+/* the div containing the text elements of each note posted */
+.previousNote {
+  height: 380px;
+  transition-delay: 2s;
+  font-size: 15px;
+  background-image: url('../Photos/new/notebg.png');
+  margin-top: 35px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-left: 90px;
+  position: relative;
+
+}
+
+li {
+   list-style-type: none;
+}
+
+/* These are divs created dynamically in JS  for the nailed notes*/
+#txtDiv {
+  margin-left: -20px;
+  text-align: left;
+  /* margin-bottom: -20px; */
+  top: 70px;
+  font-size: 25px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+#nameDiv {
+  position:absolute;
+  text-align: left;
+  margin-left: -20px;
+  font-size: 15px;
+  color: red;
+  top: 45px;
+  word-wrap: break-word;
+}
+
+#dateDiv {
+  position:absolute;
+  margin-top: 330px;
+  margin-left: -18px;
+  text-align: left;
+  font-size: 15px;
+  color: red;
+}
+
+.glyphicon {
+  position: absolute;
+  top: 35px;
+  right:50px;
+  visibility: hidden;
+}
+
+.glyphicon:hover {
+  color:red;
+  cursor:pointer;
+}
+
+.previousNote:hover .glyphicon {
+  visibility: visible;
+}
